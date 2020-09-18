@@ -32,10 +32,8 @@ jobs:
         with:
           name: dist
           path: dist
-      - name: Deploy to Firebase
+      - name: Deploy to OTA
         uses: bravesoft-sinh/ota-action
-        with:
-          args: deploy --only hosting
         env:
           USER: ${{ secrets.USER }}
           HOST_NAME: ${{ secrets.HOST_NAME }}
