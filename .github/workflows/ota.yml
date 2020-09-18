@@ -39,3 +39,6 @@ jobs:
           HOST_NAME: ${{ secrets.HOST_NAME }}
           SSH_KEY: ${{ secrets.SSH_KEY }}
           PROJECT_NAME: ${{ secrets.PROJECT_NAME }}
+      - name: Check Parametter
+        run: |
+          echo $USER
