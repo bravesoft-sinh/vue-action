@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: OTA
 on:
   push:
     branches:
@@ -33,7 +33,7 @@ jobs:
           name: dist
           path: dist
       - name: Deploy to Firebase
-        uses: bs-sinh/ota-action@master
+        uses: bravesoft-sinh/ota-action
         with:
           args: deploy --only hosting
         env:
