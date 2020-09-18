@@ -33,7 +33,7 @@ jobs:
           name: dist
           path: dist
       - name: Deploy to OTA
-        uses: bravesoft-sinh/ota-action
+        uses: bravesoft-sinh/ota-action@master
         env:
           USER: ${{ secrets.USER }}
           HOST_NAME: ${{ secrets.HOST_NAME }}
